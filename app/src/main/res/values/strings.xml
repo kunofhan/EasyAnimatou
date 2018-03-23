@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AnimateTest</string>
+    <string name="start_tween">开启帧动画</string>
+    <string name="stop_tween">关闭帧动画</string>
+    <string name="tween_rotate">旋转</string>
+    <string name="tween_translate">移动</string>
+    <string name="tween_scale">缩放</string>
+    <string name="tween_alpha">淡入淡出</string>
+    <string name="tween_all">动画集</string>
+</resources>

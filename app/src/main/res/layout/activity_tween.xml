@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="animate.han.com.animatetest.TweenActivity">
+
+    <Button
+        android:id="@+id/tween_rotate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tween_rotate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/tween_translate"/>
+
+    <Button
+        android:id="@+id/tween_translate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tween_translate"
+        app:layout_constraintLeft_toRightOf="@+id/tween_rotate"
+        app:layout_constraintRight_toLeftOf="@+id/tween_scale"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tween_scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tween_scale"
+        app:layout_constraintLeft_toRightOf="@+id/tween_translate"
+        app:layout_constraintRight_toLeftOf="@+id/tween_alpha"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tween_alpha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tween_alpha"
+        app:layout_constraintLeft_toRightOf="@+id/tween_scale"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/tween_all"
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tween_rotate"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/tween_all"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_height="wrap_content"/>
+    <ImageView
+        android:id="@+id/tween_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/img1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tween_rotate"/>
+</android.support.constraint.ConstraintLayout>
